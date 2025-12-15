@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shrestha Metals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(rgba(0, 70, 65, 0.85),
+                                  rgba(0, 70, 65, 0.85)),
+                  url("background.jpg");
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+
+    .container {
+      display: flex;
+      height: 93%;
+      padding: 150px;
+      flex-direction: row;
+    }
+
+    /* LEFT SECTION */
+    .left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .brand h1 {
+      font-size: 64px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .brand p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .socials i {
+      font-size: 22px;
+      margin-right: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+      padding-top:40px;
+    }
+
+    .socials i:hover {
+      opacity: 0.7;
+    }
+
+    /* RIGHT SECTION */
+    .right {
+      width: 320px;
+      
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .menu a {
+      text-decoration: none;
+      display: flex;
+      color: white;
+      font-size: 20px;
+      padding: 18px 0;
+      border-top: 1px solid rgba(255,255,255,0.6);
+      transition: 0.3s;
+    }
+
+    .menu a:last-child {
+      border-bottom: 1px solid rgba(255,255,255,0.6);
+    }
+
+    .menu a:hover {
+      padding-left: 10px;
+      opacity: 0.85;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1100px) {
+      .container {
+        flex-direction: column;
+        padding: 30px;
+      }
+
+      .right {
+        width: 100%;
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- LEFT -->
+    <div class="left">
+      <div class="brand">
+        <h1>Shrestha<br>Metals</h1>
+        <p>Ranipauwa 13, Pokhara</p>
+    
+        <div class="socials">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+
+      
+
+    <!-- RIGHT -->
+    <div class="right">
+      <div class="menu">
+        <a href="aboutUs.html">About Us</a>
+        <a href="blog.html">Blog</a>
+        <a href="request.html">Request a Order</a>
+        <a href="previousWork.html">Previous works</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+
+  </div>
+<hr>
+<footer style="text-align: right;">
+    <br>
+    <p>All rights reserved. Krishna Metals Ranipauwa.</p>
+</footer>
+</body>
+
+</html>
